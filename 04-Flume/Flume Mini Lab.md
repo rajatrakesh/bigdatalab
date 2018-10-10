@@ -10,11 +10,11 @@
 
 * Once you have access to Twitter, you would be able to register an app there
 
-![Twitter Apps](../../images/flume/flume_twitter1.jpg)
+![Twitter Apps](../images/flume/flume_twitter1.jpg)
 
 * Once you build you app, what you really need is your credentials, so that you can access Twitter Data
 
-![Twitter Apps](../../images/flume/flume_twitter2.jpg)
+![Twitter Apps](../images/flume/flume_twitter2.jpg)
 
 * Note these credentials, as you would be needing these in the conf file for Flume
 
@@ -72,18 +72,18 @@
 
 		flume-ng agent -f twitter.conf -Dflume.root.logger=INFO,console -n TwitterAgent
 
-![Twitter Agent](../../images/flume/flume_twitter3.jpg)
+![Twitter Agent](../images/flume/flume_twitter3.jpg)
 
 * Check the HDFS directory to see that messages are being written
 
-![Twitter Agent](../../images/flume/flume_twitter4.jpg)
+![Twitter Agent](../images/flume/flume_twitter4.jpg)
 
 * To see what is actually being written in
 
 		hdfs dfs -ls /user/cloudera/twitter_data/
 		hdfs dfs -cat /user/cloudera/twitter_data/FlumeData.1536137681761
 		
-![Twitter Agent](../../images/flume/flume_twitter5.jpg)
+![Twitter Agent](../images/flume/flume_twitter5.jpg)
 
 
 
