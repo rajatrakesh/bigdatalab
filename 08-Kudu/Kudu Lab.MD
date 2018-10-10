@@ -1,5 +1,10 @@
 ### Kudu Hands-On Lab
 
+#### Kudu Installation
+We'll install Kudu through the parcel available remotely. Download the parcel, distribute and activate it.
+
+![Kudu Install](../images/kudu/Kudu1.jpg)
+
 #### Loading Data Into Kudu
 
 * Let's download some sample data and upload that into our HDFS cluster. For this exercise, we will download the sample dataset from SF MTA's website at [http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz](http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz)
