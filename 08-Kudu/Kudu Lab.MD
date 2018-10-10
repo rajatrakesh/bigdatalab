@@ -9,6 +9,20 @@ After downloading the parcel, let's distribute it
 
 ![Kudu Install](../images/kudu/Kudu2.jpg)
 
+Now let's add the Kudu Service to your deployment. The configuration settings are quite easy. 
+
+Select the tablet and master server
+
+![Kudu Install](../images/kudu/Kudu3.jpg)
+
+Now set up the storage path for Master, Tablet and WAL directories
+
+![Kudu Install](../images/kudu/Kudu4.jpg)
+
+Now we need to setup the default no of replicas to 1. This will need to be done after the service is deployed. You can access this setting from the configuration tab.
+
+![Kudu Install](../images/kudu/Kudu5.jpg)
+
 #### Loading Data Into Kudu
 
 * Let's download some sample data and upload that into our HDFS cluster. For this exercise, we will download the sample dataset from SF MTA's website at [http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz](http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz)
