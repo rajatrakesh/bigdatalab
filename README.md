@@ -22,7 +22,7 @@
  * Q & A
  
 ### Reference Articles
-* Github Repo with code: [https://github.com/rajatrakesh/data-streaming](https://github.com/rajatrakesh/data-streaming)
+
 * How to use Flume and Kafka [here](https://www.cloudera.com/documentation/kafka/latest/topics/kafka_flume.html)
 * How to run the flume agent [here](https://www.cloudera.com/documentation/enterprise/5-8-x/topics/cdh_ig_flume_run.html)
 * Flume and Kafka for Event Streaming [blog](http://blog.cloudera.com/blog/2014/11/flafka-apache-flume-meets-apache-kafka-for-event-processing/)
