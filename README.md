@@ -18,6 +18,8 @@
  * Flume Hands-On
  * Kafka Lab
  * Impala Hands-On
+ * Hbase Hands-On
+ * Kudu Hands-On
  * Assignment / Use Case
  * Q & A
  
