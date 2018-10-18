@@ -235,7 +235,7 @@ Doesn’t work. You can’t drop a namespace while there’s a table in it. Drop
 * Create a namespace 'cloudera1'
 * Create a table 'table_1' with 3 column families (column_family1,column_family2,column_family3)
 * Describe the table structure
-* Enable tracking the option for multiple versions in 'column_family1'
+* Enable tracking the option for multiple versions in 'column_family1' (5 Versions)
 * Alter table to store 'column_family1' in memory
 * Load the following data in the table
 - row1,colum_family1:c11 value:r1v11
