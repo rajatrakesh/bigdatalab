@@ -1,4 +1,4 @@
-## Cloudera Streaming and Analytics Workshop
+## Cloudera Big Data Lab
 
 #### Pre-requisites:
 * Cloudera Quick Start VM (Kudu Not installed)
