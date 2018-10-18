@@ -3,9 +3,9 @@
 #### Configuration Instructions
 * Install Virtualbox and load the VM image
 * Make sure that you have a working internet connection (ideally without proxy) and the Virtualbox VM has 'NAT' an an option setup. 
-* Assign ATLEAST 10840 MB RAM to the VM
-* Assign ATLEAST 16 MB to the Video Memory
-* Start the VM. All Cloudera services will auto start
+* Assign ATLEAST 12070 MB RAM to the VM
+* Assign ATLEAST 24 MB to the Video Memory
+* Assign 2 Virtual CPU to the VM
 
 
 #### Setup a Shared folder to copy files to/from the VM Instance
@@ -43,5 +43,4 @@ There would be a few mini-labs/assignments during this workshop. These assignmen
 * Cloudera Enterprise Manager (Trial) Version setup and working
 * Kakfa Installation - By default not installed. We will install this during the Kafka Lab
 * Kudu Installation - By default not installed. We will install this during the Kudu Lab
-* Python Installation - By default not installed. We will install it if needed. 
 
