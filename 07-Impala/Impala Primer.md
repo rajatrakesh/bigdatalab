@@ -180,3 +180,6 @@ The table has been created in the wrong database since it was the one selected. 
 	+--------------------+
 	| bigdatalab         |
 	+--------------------+
+	
+* Inserting values in the table
+
