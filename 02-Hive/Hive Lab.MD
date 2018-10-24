@@ -144,4 +144,4 @@ Execute the following query in the Hive Query Editor (not Impala Query Editor)
 
 ![Impala Query](../images/hive/hive8.jpg)
 
-###This concludes our Hive Lab.
+#### This concludes our Hive Lab.
