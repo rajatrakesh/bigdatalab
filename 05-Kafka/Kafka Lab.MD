@@ -7,9 +7,12 @@ Kafka is not installed by default in the Quickstart VM. Hence we would need to i
 * After starting the VM, check that all services have been successfully started up
 ![Cloudera Manager Service View](../images/kafka/kafka1.jpg)
 
-* Check that the Kafka Parcel location is correctly setup
-![Cloudera Manager Service View](../images/kafka/kafka2.jpg)
+* During the setup process, we had pre-downloaded the Kafka package. We'll install that now. Goto into terminal and type the following: 
 
+		sudo yum install kafka kafka-server
+		
+After the installation completes, we'll add the Kafka Service to our cluster.
+	
 * Add the Kafka Service to the Cluster
 ![Cloudera Manager Service View](../images/kafka/kafka3.jpg)
 

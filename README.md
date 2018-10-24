@@ -24,7 +24,6 @@
  * Hbase
  * Kudu
  * Assignment / Use Case
-
  
 ### Pre-Setup for Lab
 
@@ -51,5 +50,10 @@ OR
 	cd
 	wget http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz
 	wget **placeholder for all datasets**
+
+### Watch the Cloudera Essential Video (2 Hours)
+As a pre-requisite, all participants must watch the 'Cloudera Essentials for Apache Hadoop' video below, before coming to the session:
+
+https://ondemand.cloudera.com/courses/course-v1:Cloudera+ESS+0/about
 
 
