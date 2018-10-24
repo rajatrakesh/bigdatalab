@@ -20,7 +20,7 @@ For this lab, we will simulate traffic coming from a clickstream or sensor devic
 
 	NetcatAgent.sources.Netcat.type = netcat
 	NetcatAgent.sources.Netcat.bind = quickstart.cloudera
-	NetcatAgent.sources.Netcat.port = 56565
+	NetcatAgent.sources.Netcat.port = 56555
 	NetcatAgent.sources.Netcat.channels = MemChannel
 
 	# Describing/Configuring the sink
@@ -45,7 +45,7 @@ For this lab, we will simulate traffic coming from a clickstream or sensor devic
 
 * Start a telnet session in another terminal window and after starting, start typing text. This will show up in the flume agent window, showing a successful read. 
 
-		telnet quickstart.cloudera 56565
+		telnet quickstart.cloudera 56555
 		
 * Type 'Hello' in the netcat window
 
@@ -70,7 +70,7 @@ This shows that flume is able to pickup data successfully from the session. You 
 	
 	NetcatAgent.sources.Netcat.type = netcat
 	NetcatAgent.sources.Netcat.bind = quickstart.cloudera
-	NetcatAgent.sources.Netcat.port = 56563
+	NetcatAgent.sources.Netcat.port = 56556
 	NetcatAgent.sources.Netcat.channels = MemChannel
 	
 	NetcatAgent.channels.MemChannel.type = memory
@@ -95,7 +95,7 @@ This shows that flume is able to pickup data successfully from the session. You 
 
 * Start a second telnet window to write data to the console
 	
-		telnet quickstart.cloudera 56563
+		telnet quickstart.cloudera 56556
 		
 * Type 1 and hit enter to create a few different transactions
 		
