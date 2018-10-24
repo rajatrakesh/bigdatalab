@@ -114,4 +114,6 @@ This shows that flume is able to pickup data successfully from the session. You 
 
 ### Mini-Lab
 
-* After successfully loading the tweets in HDFS, create a table in Hive to query the data 
+* Connect to twitter using Flume
+* Download tweets and land the tweets into HDFS
+* Create a table to query the tweets
