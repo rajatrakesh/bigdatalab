@@ -48,7 +48,7 @@ OR
 
 ### Download Sample Datasets
 	cd
-	wget http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz
+	sudo wget http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz
 	wget **placeholder for all datasets**
 
 ### Watch the Cloudera Essential Video (2 Hours)
