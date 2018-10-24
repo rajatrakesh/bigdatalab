@@ -25,11 +25,13 @@ After startup, you may see multiple issues in Cloudera Manager. Let's try and ad
 
 Start the services in the following order:
 
-* HDFS
-* YARN
 * Zookeeper
+* YARN
+* HDFS
 * Hive
 * Impala
+* HBase
+* Oozie
 * Hue
 
 This is the bare minimum of services that would be required in the first lab. There would be further installations and configurations that would be required in the labs that will follow. 
