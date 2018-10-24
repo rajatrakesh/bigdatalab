@@ -111,3 +111,7 @@ This shows that flume is able to pickup data successfully from the session. You 
 * Check for the data using Hue
 
 ![Flume Agent](../images/flume/flume5.jpg)
+
+### Mini-Lab
+
+* After successfully loading the tweets in HDFS, create a table in Hive to query the data 
