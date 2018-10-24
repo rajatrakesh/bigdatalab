@@ -39,7 +39,7 @@ After the installation completes, we'll add the Kafka Service to our cluster.
 		sudo find / -name kafka-topics.sh  
 		/opt/cloudera/parcels/KAFKA-3.1.0-1.3.1.0.p0.35/lib/kafka/bin/kafka-topics.sh
 
-* Let's setup this location in the path to make the access easier
+* Let's setup this location in the path to make the access easier (your installation may be different)
 		`$ export PATH=$PATH:/opt/cloudera/parcels/KAFKA-3.1.0-1.3.1.0.p0.35/lib/kafka/bin`
 
 **TIP**: Put the path in the `~/.bash_profile`file so that you don't have to set up the path everytime. You can explicity execute it by typing `source ~/.bash_profile`

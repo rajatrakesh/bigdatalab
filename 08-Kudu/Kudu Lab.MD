@@ -1,13 +1,9 @@
 ### Kudu Hands-On Lab
 
 #### Kudu Installation
-We'll install Kudu through the parcel available remotely. Download the parcel, distribute and activate it.
+We'll install Kudu through the package that we pre-downloaded, as mentioned in the README.md. To install Kudu, simply execute the following in the terminal window:
 
-![Kudu Install](../images/kudu/Kudu1.jpg)
-
-After downloading the parcel, let's distribute it
-
-![Kudu Install](../images/kudu/Kudu2.jpg)
+	sudo yum install kudu kudu-master kudu-tserver
 
 Now let's add the Kudu Service to your deployment. The configuration settings are quite easy. 
 
@@ -15,13 +11,20 @@ Select the tablet and master server
 
 ![Kudu Install](../images/kudu/Kudu3.jpg)
 
-Now set up the storage path for Master, Tablet and WAL directories
+Now set up the storage path for Master, Tablet and WAL directories. I suggest the following directory structure (you don't need to create them, they will be setup automatically):
+
+	/var/local/kudu/wal/master/
+	/var/local/kudu/data/master/
+	/var/local/kudu/wal/tserver/
+	/var/local/kudu/data/tserver/
 
 ![Kudu Install](../images/kudu/Kudu4.jpg)
 
 Now we need to setup the default no of replicas to 1. This will need to be done after the service is deployed. You can access this setting from the configuration tab.
 
 ![Kudu Install](../images/kudu/Kudu5.jpg)
+
+*Hint: If you get errros in the Kudu deployment screen, then open another cloudera manager session in browser, navigate to the Kudu configuration and make the change listed above and click the save button. Then return to the previous Kudu installation session in Cloudera Manager and click finish. The process will complete successfully now.*
 
 #### Loading Data Into Kudu
 
