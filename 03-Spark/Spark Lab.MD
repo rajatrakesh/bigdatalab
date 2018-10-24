@@ -91,4 +91,4 @@ The output would look like this:
 
 If it weren't for Spark, doing cooccurrence analysis like this would be an extremely arduous and time-consuming task. However, using Spark, and a few lines of scala, you were able to produce a list of the items most frequently purchased together in very little time. 
 
-###End of Spark Lab.
+#### End of Spark Lab.
