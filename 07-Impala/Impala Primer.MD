@@ -182,3 +182,5 @@ The table has been created in the wrong database since it was the one selected. 
 	+--------------------+
 	
 * Inserting values in the table
+
+
