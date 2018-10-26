@@ -44,3 +44,4 @@ There would be a few mini-labs/assignments during this workshop. These assignmen
 * Kakfa Installation - By default not installed. We will install this during the Kafka Lab
 * Kudu Installation - By default not installed. We will install this during the Kudu Lab
 
+### Download the configuration and sample data files
