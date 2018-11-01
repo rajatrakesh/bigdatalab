@@ -45,3 +45,12 @@ There would be a few mini-labs/assignments during this workshop. These assignmen
 * Kudu Installation - By default not installed. We will install this during the Kudu Lab
 
 ### Download the configuration and sample data files
+
+The config and data files are available on S3. Execute the following (in your VM) to download this:
+
+	sudo wget https://s3-ap-southeast-1.amazonaws.com/rajat-cloudera-bigdatalab/bigdatalab.zip
+	unzip bigdatalab.zip
+
+This will create the necessary directories and setup all the required scripts, data files and configuration files for our assignments.
+
+### End of Setup
