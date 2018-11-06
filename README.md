@@ -44,16 +44,10 @@ OR
 
 * Download the VM image available here which has the necessary packages and datasets pre-downloaded
 
-**** Placeholder for the AWS VM image **** 
-
-### Download Sample Datasets
-	cd
-	sudo wget http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz
-	wget **placeholder for all datasets**
+Instructions for the AWS Setup are available [here](/01-Setup/AWS Setup.MD)
 
 ### Watch the Cloudera Essential Video (2 Hours)
 As a pre-requisite, all participants must watch the 'Cloudera Essentials for Apache Hadoop' video below, before coming to the session:
 
 https://ondemand.cloudera.com/courses/course-v1:Cloudera+ESS+0/about
-
 
