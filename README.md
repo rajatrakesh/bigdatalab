@@ -42,7 +42,7 @@ While it is preferred that there is a good internet connection available to all 
 		
 OR 
 
-* Download the VM image available here which has the necessary packages and datasets pre-downloaded
+* You can leverage an AMI image made available on AWS, which is a clone of the Cloudera QuickStart 5.13 VM. Please note that this may involve charges on AWS for running this instance for the duration of the workshop. 
 
 Instructions for the AWS Setup are available [here](https://github.com/rajatrakesh/bigdatalab/blob/master/01-Setup/AWS%20Setup.MD)
 

@@ -5,7 +5,7 @@
 * Make sure that you have a working internet connection (ideally without proxy) and the Virtualbox VM has 'NAT' an an option setup. 
 * Assign ATLEAST 12070 MB RAM to the VM
 * Assign ATLEAST 24 MB to the Video Memory
-* Assign 2 Virtual CPU to the VM
+* Assign 2 Virtual CPU/Cores to the VM
 
 
 #### Setup a Shared folder to copy files to/from the VM Instance
@@ -44,10 +44,11 @@ There would be a few mini-labs/assignments during this workshop. These assignmen
 * Kakfa Installation - By default not installed. We will install this during the Kafka Lab
 * Kudu Installation - By default not installed. We will install this during the Kudu Lab
 
+
 ### Download the configuration and sample data files
 
-The config and data files are available on S3. Execute the following (in your VM) to download this:
-
+The config and data files are available on S3. The instructions for downloading the files would be provided during the workshop.
+	
 	sudo wget https://s3-ap-southeast-1.amazonaws.com/rajat-cloudera-bigdatalab/bigdatalab.zip
 	unzip bigdatalab.zip
 

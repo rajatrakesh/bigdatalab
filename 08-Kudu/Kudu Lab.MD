@@ -123,6 +123,6 @@ The original dataset has some issues with DOS-style line endings, so will conver
 #### End of Kudu Lab
 
 #### Reference Articles
-* [https://kudu.apache.org/docs/](https://kudu.apache.org/docs/)
 
+* [https://kudu.apache.org/docs/](https://kudu.apache.org/docs/)
 * [Blog: Using Impala with Kudu](http://blog.cloudera.com/blog/2015/11/how-to-use-impala-with-kudu/)

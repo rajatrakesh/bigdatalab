@@ -117,3 +117,7 @@ This shows that flume is able to pickup data successfully from the session. You 
 * Connect to twitter using Flume
 * Download tweets and land the tweets into HDFS
 * Create a table to query the tweets
+* Modify Flume settings to write tweets into larger files (to avoid small file problem)
+
+### Reference:
+* [Flume Documentation](https://flume.apache.org/FlumeUserGuide.html)
