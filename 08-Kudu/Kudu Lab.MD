@@ -126,3 +126,7 @@ The original dataset has some issues with DOS-style line endings, so will conver
 
 * [https://kudu.apache.org/docs/](https://kudu.apache.org/docs/)
 * [Blog: Using Impala with Kudu](http://blog.cloudera.com/blog/2015/11/how-to-use-impala-with-kudu/)
+* Kudu Examples [Github](https://github.com/cloudera/kudu-examples)
+* Developing Examples with Kudu [Documentation](https://www.cloudera.com/documentation/enterprise/5-14-x/topics/kudu_development.html)
+* Kudu Applications [kudu.apache.org](https://kudu.apache.org/docs/developing.html)
+* Spark on Kudu [Cloudera Blog](http://blog.cloudera.com/blog/2017/02/up-and-running-with-apache-spark-on-apache-kudu/)

@@ -180,3 +180,6 @@ Execute the following query in the Hive Query Editor (not Impala Query Editor)
 ![Hive Mini Lab Solution 2](../images/hive/hive-minilab2.jpg)
 
 #### This concludes our Hive Lab.
+
+#### Reference
+* [Parquet Documentation](https://www.cloudera.com/documentation/enterprise/5-6-x/topics/cdh_ig_parquet.html)
