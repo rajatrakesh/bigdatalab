@@ -1,15 +1,24 @@
-### VM Setup
+### Post Setup (AWS/VirtualBox)
+
+Once you have setup the Quickstart VM, either on AWS or using Virtualbox, there are a couple of steps required to configure the Cloudera Manager Enterprise (Trial). 
+
+By default, the instance is configured to work on the free Cloudera Managere Express version. The following command would need to be executed to configure the instance to work with the Enterprise version. **Note:** This needs to be done only once, the very first time when you start the VM. 
+
+We can do this by typing this in our terminal session (either in ssh to AWS or inside the VM instance)
+
+	sudo /home/cloudera/cloudera-manager --pause --enterprise
+
+This will configure and activate Cloudera Manager Enterprise (60 day trial) in your instance. After 60 days, you would either need to get a valid license file from Cloudera (if you have a paid subscription) or switch back to Cloudera Express (certain features may not be available). 
+
+![Public AMI](../images/aws/aws12.jpg)
+
+Once the setup is complete, you would be able to access Cloudera Manager in your local laptop browser by using the url: 
+
+	http://quickstart.cloudera:7180/cmf/login
+
+![Public AMI](../images/aws/aws13.jpg)
 
 #### Instructions
-
-
-* Uncompress the zip file and import the VM into VMware/Virtualbox. For this workshop, I recommend Virtualbox. 
-* Your laptop must have ATLEAST 16 GB RAM for this workshop. If not, you would NOT be able to proceed and complete multiple labs, setups etc. 
-* Assign 12072 (min) as memory to the VM image and 2 virtual processors. Boot up the VM. 
-* Ensure DVD Option is enabled
-* Install Guest Editions after bootup
-* Click the Cloudera Enterprise (Trial) Option on Desktop
-* After successful setup, REBOOT !
 
 After restart, click the Cloduera Manager option in Firefox and wait for Cloudera Manager to start up. Sometimes, this can take more than 15 mins. 
 
@@ -19,7 +28,7 @@ After startup, you may see multiple issues in Cloudera Manager. Let's try and ad
 * Host Monitor - Need to start
 * Services Monitor - Need to start
 * Management Console - Need to re-start
-* There would be a lot of configuration related warnings that would be displayed. This is NORMAL, since the Virtual machine has only one node. Suppress all warnings being displayed. 
+* There would be a lot of configuration related warnings that would be displayed. This is NORMAL, since the Virtual machine has only one node. Suppress all warnings/issues being displayed. 
 
 #### Startup
 
@@ -33,5 +42,8 @@ Start the services in the following order:
 * HBase
 * Oozie
 * Hue
+
+**Note**
+* Do NOT start Spark, Solr, Key Value, SQOOP
 
 This is the bare minimum of services that would be required in the first lab. There would be further installations and configurations that would be required in the labs that will follow. 
