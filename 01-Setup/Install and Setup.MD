@@ -106,4 +106,8 @@ The config and data files are available on S3. The instructions for downloading 
 
 This will create the necessary directories and setup all the required scripts, data files and configuration files for our assignments.
 
+### Start-up sequence
+
+The instructions for the start-up sequence and final checks are available [here](https://github.com/rajatrakesh/bigdatalab/blob/master/01-Setup/Startup.MD)
+
 ### End of Setup
