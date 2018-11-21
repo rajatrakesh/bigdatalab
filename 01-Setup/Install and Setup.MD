@@ -47,9 +47,8 @@ There would be a few mini-labs/assignments during this workshop. These assignmen
 
 ### Download the configuration and sample data files
 
-The config and data files are available on S3. The instructions for downloading the files would be provided during the workshop.
-	
-	sudo wget https://s3-ap-southeast-1.amazonaws.com/rajat-cloudera-bigdatalab/bigdatalab.zip
+The config and data files are available on S3. The instructions for downloading the files would be provided during the workshop. After receiving the files, upload the zip into your VM/AWS instance in the downloads directory. Then execute the following:
+
 	unzip bigdatalab.zip
 
 This will create the necessary directories and setup all the required scripts, data files and configuration files for our assignments.
