@@ -24,6 +24,6 @@
 
 * After successful exection: 
 
-![Kafka Consumer](../images/kafka/kafka9.jpg)
+![Kafka Consumer](../../images/kafka/kafka9.jpg)
 
 **TIP** A sample for these files would be available in `/opt/cloudera/parcels/KAFKA-3.1.0-1.3.1.0.p0.35/etc/kafka/conf.dist/`
