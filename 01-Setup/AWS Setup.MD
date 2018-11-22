@@ -67,21 +67,7 @@ Then connect to the instance by typing:
 
 The default userid/password setup in the instance is cloudera/cloudera
 
-![Public AMI](../images/aws/aws11.jpg)
-
-The last step that remains is to configure the instance to startup Cloudera Manager Enterprise Trial (the default is Cloudera Express). We can do this by typing this in our terminal session:
-
-	sudo /home/cloudera/cloudera-manager --pause --enterprise
-
-This will configure and activate Cloudera Manager Enterprise (60 day trial) in your instance. After 60 days, you would either need to get a valid license file from Cloudera (if you have a paid subscription) or switch back to Cloudera Express (certain features may not be available). 
-
-![Public AMI](../images/aws/aws12.jpg)
-
-Once the setup is complete, you would be able to access Cloudera Manager in your local laptop browser by using the url: 
-
-	http://yourpublicip:7180/cmf/login
-
-![Public AMI](../images/aws/aws13.jpg)
+There are a few additional steps required for final checks, start-up sequence etc. They are available [here](https://github.com/rajatrakesh/bigdatalab/blob/master/01-Setup/Startup.MD)
 
 #### This concludes this tutorial
 
