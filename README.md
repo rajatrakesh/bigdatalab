@@ -9,21 +9,27 @@
 
 ### Labs Agenda
 
-* Pre-requisites and Setup
+* [Pre-requisites and Setup](01-Setup/Install and Setup.MD)
+	- Deploy VM on local laptop or on AWS
 	- Validate Cloudera Manager
 	- Configure the VM
+	- Download Packages
+	- Startup Services
+
 * Installation
 	- Kafka
 	- Kudu
-	- Python (Tweepy, Kafka-python)
+
 * Hands-On Labs
- * HDFS & Hive
- * Flume 
- * Kafka 
- * Impala
- * Hbase
- * Kudu
+ * [HDFS & Hive](rajatrakesh/02-Hive/Hive Lab.MD)
+ * [Flume](04-Flume/Flume Lab.MD) 
+ * [Kafka](05-Kafka/Kafka Lab.MD)
+ * [Impala Primer](07-Impala/Impala Primer.MD)
+ * [Hbase](06-Hbase/Hbase Lab.MD)
+ * [Kudu](08-Kudu/Kudu Lab.MD)
  * Assignment / Use Case
+ * [Reference Documents](10-Reference/Reference Material.MD)
+ * [Sample Datasets](10-Reference/Sample DataSets.md)
  
 
 ### Watch the Cloudera Essential Video (2 Hours)
