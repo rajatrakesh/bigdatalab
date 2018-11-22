@@ -28,7 +28,7 @@ Now we need to setup the default no of replicas to 1. This will need to be done 
 
 #### Loading Data Into Kudu
 
-* Let's download some sample data and upload that into our HDFS cluster. For this exercise, we will download the sample dataset from SF MTA's website at [http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz](http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz)
+* Let's upload some sample data into our HDFS cluster. For this exercise, we will download the sample dataset from SF MTA's website at [http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz](http://kudu-sample-data.s3.amazonaws.com/sfmtaAVLRawData01012013.csv.gz)
 
 The original dataset has some issues with DOS-style line endings, so will convert it to unix using the `tr` option.
 

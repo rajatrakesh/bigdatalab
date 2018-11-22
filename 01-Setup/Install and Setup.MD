@@ -7,7 +7,9 @@
 * Assign ATLEAST 24 MB to the Video Memory
 * Assign 2 Virtual CPU/Cores to the VM
 
-
+--
+#### Optional - Only if you are using Virtualbox ####
+--
 #### Setup a Shared folder to copy files to/from the VM Instance
 
 **Share a folder on the host OS**  
@@ -38,20 +40,74 @@
 After you restart the guest OS, your shared folder will be automatically mounted. 
 Original article on how to set this up [here](https://ryansechrest.com/2012/10/permanently-share-a-folder-between-host-mac-and-guest-linux-os-using-virtualbox/)
 
-There would be a few mini-labs/assignments during this workshop. These assignments would require that the following pre-requisites are met:
+### Using AWS Image instead of the Virtualbox Instance
 
-* Cloudera Enterprise Manager (Trial) Version setup and working
-* Kakfa Installation - By default not installed. We will install this during the Kafka Lab
-* Kudu Installation - By default not installed. We will install this during the Kudu Lab
+* You can leverage an AMI image made available on AWS, which is a clone of the Cloudera QuickStart 5.13 VM. Please note that this may involve charges on AWS for running this instance for the duration of the workshop. 
 
+Instructions for the AWS Setup are available [here](https://github.com/rajatrakesh/bigdatalab/blob/master/01-Setup/AWS%20Setup.MD)
+
+### Pre-Setup for Lab
+
+While it is preferred that there is a good internet connection available to all participants during the course of the lab, as there would be downloads required for installing various packages. If the same is not available, there is an option for pre-downloading certain packages before starting with the labs. The following steps would be required:
+
+* Start the VM image (No other services need to be started for this exercise)
+* Make sure that the VM image is able to access internet from the VM itself using the browser. We would be downloading approximately 1 GB of data
+* Open a terminal window and type the following
+
+		cd /etc/yum.repos.d
+		sudo yum install kafka kafka-server --downloadonly
+		sudo wget archive.cloudera.com/kudu/redhat/6/x86_64/kudu/cloudera-kudu.repo
+		sudo yum install kudu kudu-master kudu-tserver --downloadonly
+		sudo yum install telnet-server telnet --downloadonly
+		sudo yum install python-pip --downloadonly
+		
+****Note: Updated 21 Nov 2018***
+
+* There could be scenarios where you might run into issues with one/few of the downloads, esp. if there are issues with one of the repo files in the repos.d folder. Use the following instructions below, in case you experience mirror or download issues. 
+
+Most of the times this tends to happen if any of the repo files have an issue. This can be checked by the following commands
+
+		cd /etc/yum.repos.d
+		sudo yum repolist all
+
+		repo id                 repo name                                         status
+		base                    CentOS-6 - Base                                    6713
+		cloudera-cdh5           Cloudera's Distribution for Hadoop, Version 5       153
+		cloudera-gplextras5     Cloudera's GPLExtras, Version 5                       0
+		cloudera-kafka          Cloudera's Distribution for kafka, Version 2          4
+		cloudera-kudu           Cloudera's Distribution for kudu, Version 5           6
+		cloudera-manager        Cloudera Manager, Version 5                           7
+		epel                    Extra Packages for Enterprise Linux               12498
+		extras                  CentOS-6 - Extras                                    33
+		updates                 CentOS-6 - Updates                                  233
+
+In this case, the easiest option is to disable the repo with status 0. We can do this by enabling the following commands:
+
+		cd /etc/yum.repos.d
+		sudo mv cloudera-gplextras5.repo cloudera-gplextras5.repo.bk
+		
+This will renamed the gplextras file to backup. We can now execute the commands properly. 
+
+		cd /etc/yum.repos.d
+		sudo yum install kafka kafka-server --downloadonly
+		sudo wget archive.cloudera.com/kudu/redhat/6/x86_64/kudu/cloudera-kudu.repo
+		sudo yum install kudu kudu-master kudu-tserver --downloadonly
+		sudo yum install telnet-server telnet --downloadonly
+		sudo yum install python-pip --downloadonly
+		
+-- 
 
 ### Download the configuration and sample data files
 
-The config and data files are available on S3. The instructions for downloading the files would be provided during the workshop.
-	
-	sudo wget https://s3-ap-southeast-1.amazonaws.com/rajat-cloudera-bigdatalab/bigdatalab.zip
+The config and data files are available on S3. The instructions for downloading the files would be provided during the workshop. After receiving the files, upload the zip into your VM/AWS instance in the downloads directory. Then execute the following:
+
+	** command to download the zip file would be provided during the workshop **
 	unzip bigdatalab.zip
 
 This will create the necessary directories and setup all the required scripts, data files and configuration files for our assignments.
+
+### Start-up sequence
+
+The instructions for the start-up sequence and final checks are available [here](https://github.com/rajatrakesh/bigdatalab/blob/master/01-Setup/Startup.MD)
 
 ### End of Setup
