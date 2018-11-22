@@ -21,7 +21,7 @@
 	- Kudu
 
 * Hands-On Labs
- * [HDFS & Hive](02-Hive/Hive Lab.MD)
+ * [HDFS & Hive](rajatrakesh/02-Hive/Hive Lab.MD)
  * [Flume](04-Flume/Flume Lab.MD) 
  * [Kafka](05-Kafka/Kafka Lab.MD)
  * [Impala Primer](07-Impala/Impala Primer.MD)
